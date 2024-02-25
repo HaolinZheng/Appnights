@@ -18,5 +18,27 @@
         android:id="@+id/inicio"
         android:name="com.example.intro.Inicio"
         android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" />
+        tools:layout="@layout/fragment_inicio" >
+        <action
+            android:id="@+id/action_inicio_to_iniciodesesion"
+            app:destination="@id/iniciodesesion" />
+        <action
+            android:id="@+id/action_inicio_to_registrarme"
+            app:destination="@id/registrarme" />
+    </fragment>
+    <fragment
+        android:id="@+id/iniciodesesion"
+        android:name="com.example.intro.Iniciodesesion"
+        android:label="fragment_iniciodesesion"
+        tools:layout="@layout/fragment_iniciodesesion" />
+    <fragment
+        android:id="@+id/registrarme"
+        android:name="com.example.intro.Registrarme"
+        android:label="fragment_registrarme"
+        tools:layout="@layout/fragment_registrarme" />
+    <fragment
+        android:id="@+id/iniciarsesion"
+        android:name="com.example.intro.iniciarsesion"
+        android:label="fragment_iniciarsesion"
+        tools:layout="@layout/fragment_iniciarsesion" />
 </navigation>

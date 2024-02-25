@@ -1,14 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Inicio">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E2E2E2"
+    tools:context=".Inicio"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <fragment
+        android:id="@+id/nav_graph"
+        android:name="com.example.intro.Inicio"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="36sp"
+        android:fontFamily="@font/inknutantiquamedium"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="36sp"
+        android:fontFamily="@font/inknutantiquamedium"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="36sp"
+        android:fontFamily="@font/inknutantiquamedium"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="36sp"
+        android:fontFamily="@font/inknutantiquamedium"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/boton1"
+        android:padding="5sp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/eleccion_inicio"
+        android:fontFamily="@font/inknutantiquamedium"
+        android:textAllCaps="false"
+        android:text="Hola, soy el nuevo\nDr.(Registrarme)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:id="@+id/boton2"
+        android:padding="5sp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/eleccion_inicio"
+        android:fontFamily="@font/inknutantiquamedium"
+        android:textAllCaps="false"
+        android:text="Si soy el\nDr.(Iniciar Sesión)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</LinearLayout>
